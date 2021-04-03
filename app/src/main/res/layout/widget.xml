@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<!--    <android.widget.ViewFlipper-->
+<!--        android:animateLayoutChanges="true"-->
+<!--        android:id="@+id/vf_slot_0"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/white"-->
+<!--        android:autoStart="true"-->
+<!--        android:inAnimation="@anim/slide_in_down"-->
+<!--        android:flipInterval="1000"-->
+<!--        android:animateFirstView="true">-->
+
+        <android.widget.RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.widget.TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <android.widget.ImageView
+                android:id="@+id/myImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/textView1"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_fuel" />
+        </android.widget.RelativeLayout>
+
+<!--        <android.widget.RelativeLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+
+<!--            <android.widget.TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:text="KMPH"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--            <android.widget.ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_below="@id/textView1"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@mipmap/ic_kmph" />-->
+<!--        </android.widget.RelativeLayout>-->
+
+<!--        <android.widget.RelativeLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent">-->
+
+<!--            <android.widget.TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:text="Launcher"-->
+<!--                android:textAppearance="?android:attr/textAppearanceLarge" />-->
+
+<!--            <android.widget.ImageView-->
+
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_below="@id/textView1"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:src="@mipmap/ic_launcher" />-->
+<!--        </android.widget.RelativeLayout>-->
+<!--    </android.widget.ViewFlipper>-->
+</RelativeLayout>

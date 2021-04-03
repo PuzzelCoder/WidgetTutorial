@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/dimens100"
+    android:minHeight="@dimen/dimens450"
+    android:widgetCategory="home_screen"
+    android:previewImage="@drawable/profile_icon"
+    android:resizeMode="horizontal|vertical"
+    android:initialLayout="@layout/adapterview">
+<!--    demo_layout/invisible0/empty_layout-->
+<!--    android:configure="com.example.tutorialspointwidget.AppWidgetConfigurationActivity"-->
+</appwidget-provider>

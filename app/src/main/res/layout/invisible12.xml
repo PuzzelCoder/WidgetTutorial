@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#2B2B2B"
+    android:minWidth="@dimen/dimens240"
+    android:minHeight="@dimen/dimens520">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/contacts_rel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/users_rel"
+        android:layout_centerHorizontal="true"
+       android:layout_marginStart="@dimen/dimens60"
+        android:layout_marginEnd="@dimen/dimens60"
+        android:minWidth="@dimen/dimens400"
+        android:minHeight="@dimen/dimens300"
+        android:layout_marginBottom="@dimen/dimens_minus_15dp"
+        android:rotationX="@integer/angle_minus_15">
+<!--        android:rotationX="@integer/angle_minus_15"-->
+<!--        <android.widget.ImageView-->
+<!--            android:id="@+id/img2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/holo_blue_dark" />-->
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/empty_text"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <android.widget.ListView
+            android:id="@+id/contacts_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="1dp"
+            android:orientation="vertical"
+            tools:listitem="@layout/listview_row_item" />
+    </android.widget.RelativeLayout>
+
+    <!--    2B2B2B-->
+    <android.widget.RelativeLayout
+        android:id="@+id/users_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/dimens90"
+        android:layout_marginEnd="@dimen/dimens90"
+        android:layout_marginTop="@dimen/dimens_minus_76"
+        android:layout_marginBottom="@dimen/dimens_minus_40dp"
+        android:rotationX="@integer/angle68">
+
+        <android.widget.ImageView
+            android:id="@+id/img1"
+            android:layout_marginTop="@dimen/dimens_minus_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#202322"
+            android:minWidth="@dimen/dimens120"
+            android:minHeight="@dimen/dimens260" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="@dimen/dimens120"
+        android:minHeight="@dimen/dimens260"
+        android:layout_marginTop="@dimen/dimens_minus_72"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:alpha="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/kuldeeps_s_phone"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

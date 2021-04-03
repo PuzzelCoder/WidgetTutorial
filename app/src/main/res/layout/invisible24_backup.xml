@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="580dp"
+    android:layout_height="580dp"
+    android:background="#2B2B2B"
+    android:id="@+id/background"
+    android:orientation="horizontal">
+<!--    2B2B2B-->
+    <android.widget.RelativeLayout
+        android:id="@+id/users_rel"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_width="@dimen/dimens490"
+        android:layout_height="@dimen/dimens240"
+        android:layout_centerHorizontal="true"
+        android:rotationX="@integer/angle46">
+<!--        android:rotationX="@integer/upper_angle12">-->
+        <android.widget.ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#202322" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:layout_width="@dimen/dimens460"
+        android:layout_height="@dimen/dimens270"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/kuldeeps_s_phone"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/contacts_rel"
+        android:layout_width="@dimen/dimens480"
+        android:layout_height="@dimen/dimens400"
+        android:layout_below="@id/users_rel"
+        android:layout_centerHorizontal="true"
+        android:rotationX="@integer/angle_minus_30">
+
+        <android.widget.ImageView
+            android:id="@+id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0F0F0F" />
+
+        <android.widget.ImageView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/black" />
+
+        <android.widget.RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/view"
+            android:layout_marginBottom="3dp">
+
+            <android.widget.ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/profile_icon" />
+
+            <android.widget.ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/fav_icon" />
+
+            <android.widget.LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profile_icon"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ava"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+00 1234567890"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+        <android.widget.RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginBottom="3dp">
+
+            <android.widget.ImageView
+                android:id="@+id/profile_icon1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:src="@mipmap/profile_icon" />
+
+            <android.widget.ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/fav_icon" />
+
+            <android.widget.LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profile_icon1"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ava"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <android.widget.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+00 1234567890"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+    </android.widget.RelativeLayout>
+    <android.widget.Button
+        android:visibility="gone"
+        android:id="@+id/button"
+        android:textColor="@color/white"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"/>
+</android.widget.RelativeLayout>

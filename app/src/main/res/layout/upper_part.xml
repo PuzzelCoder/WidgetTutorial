@@ -1,0 +1,35 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/users_rel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:rotationX="0">
+
+        <android.widget.ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#202322" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/kuldeeps_s_phone"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

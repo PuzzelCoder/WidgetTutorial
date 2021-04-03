@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tutorialspointwidget">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="com.example.tutorialspointwidget.MyAppliactionClass"
+        android:theme="@style/Theme.TutorialsPointWidget"
+        tools:ignore="Instantiatable">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity android:name=".AppWidgetConfigurationActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+        <receiver android:name=".WidgetConfig">
+
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/my_widget"/>
+            <intent-filter>
+                <action android:name="UPDATETO12" />
+                <action android:name="UPDATETO24" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+            </intent-filter>
+        </receiver>
+<!--         The service serving the RemoteViews to the collection widget -->
+<!--        <service-->
+<!--            android:name="com.example.tutorialspointwidget.WidgetServiceFlipper"-->
+<!--            android:exported="false"-->
+<!--            android:permission="android.permission.BIND_REMOTEVIEWS" />-->
+        <service
+            android:name="com.example.tutorialspointwidget.ContactsWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+    </application>
+
+</manifest>
